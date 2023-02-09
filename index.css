@@ -1,0 +1,35 @@
+.region{
+    margin: 20px 50px;
+    width: 30%;
+}
+.search{
+    margin: 20px 50px;
+    /* width: 30%; */
+}
+.allapi{
+    /* background: whitesmoke; */
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.countryCard{
+    /* background: wheat; */
+    margin: 50px 10px;
+    padding: 0 10px;
+}
+.dark-mode {
+    
+    border-radius: 0%;
+    background-color: black;
+    color: white;
+  }
+.darkMode{
+    cursor: pointer;
+}
+.clr{
+    color: grey;
+}
+  /* .dark-mode:hover{
+    cursor: pointer;
+  } */

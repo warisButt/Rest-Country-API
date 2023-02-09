@@ -1,0 +1,48 @@
+.arrow {
+    border: solid black;
+    /* background-color: white; */
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 5px 5px;
+  }
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .bk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .display{
+    display: none;
+  }
+  .allapi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .dark-mode {
+    
+    border-radius: 0%;
+    background-color: black;
+    color: white;
+  }
+  .darkMode{
+    cursor: pointer;
+    color: grey;
+  }
+ #flagImage{
+    margin: 20px 50px;
+    position: fixed;
+    bottom: 100;
+    left: 0;
+    /* width: 300px;
+    border: 3px solid #73AD21; */
+ }
+ .description{
+    margin: 20px 50px;
+    position: fixed;
+ }
