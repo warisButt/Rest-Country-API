@@ -1,3 +1,8 @@
+.navEdit{
+    font-family: var(--bs-body-font-family);
+    font-size: calc(1.3rem + .6vw);
+}
+
 .region{
     margin: 20px 50px;
     width: 30%;
@@ -8,15 +13,12 @@
 }
 .allapi{
     /* background: whitesmoke; */
-    margin: 20px 20px;
+    /* background-color: aliceblue; */
+    margin: 20px 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-.countryCard{
-    /* background: wheat; */
-    margin: 50px 10px;
-    padding: 0 10px;
+    
 }
 .dark-mode {
     
@@ -27,9 +29,53 @@
 .darkMode{
     cursor: pointer;
 }
+
 .clr{
     color: grey;
+    margin-left: auto;
 }
-  /* .dark-mode:hover{
-    cursor: pointer;
-  } */
+.countryCard{
+    /* background-color: white; */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+    /* margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 3rem;  
+    margin: 35px 30px;
+    border-radius: 0%; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 415px;
+    margin: 45px;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.5rem rgb(17, 17, 17);
+    transition: all 0.3s;
+ 
+}
+.flag{
+     border-radius: 4px 0 0 4px;
+     border: 1px solid wheat;
+     
+     /* width: 18rem;
+     height: 12rem;
+     border-top-left-radius: 0.5rem;
+     border-top-right-radius: 0.5rem; */
+    /* max-width: 100%; */
+    /* box-shadow: 5px 5px 5px #888888; */
+    /* border-radius: 60px; */
+}
+.description{
+    /* font-weight: bold; */
+    margin: 37px 15px;
+    font-family: var(--bs-body-font-family);
+}
+.classNam{
+    font-size: 1px;
+}

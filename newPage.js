@@ -26,16 +26,16 @@ const apiData = async () => {
       <div class="description">
       <h3><span>${element.name.common}</span></h3>
       <br>
-      <p id="pop"><span>Native Name: </span>${
+      <p id="pop"><span><b>Native Name:</b> </span>${
         Object.values(element.name.nativeName)[0].common
       }</p>
-      <p id="pop"><span>Population: </span>${element.population}</p>
-      <p><span>Region: </span>${element.region}</p>
-      <p><span>Sub Region: </span>${element.subregion}</p>
-      <p><span>Top Level Domain: </span>${element.tld}</p>
-      <p>Languages: ${Object.values(element.languages)[0]}</p>
-      <p><span>Capital: </span>${element.capital}</p>
-      <p><span>Border Countries: </span><button className="btn">${
+      <p id="pop"><span><b>Population:</b> </span>${element.population}</p>
+      <p><span><b>Region:</b> </span>${element.region}</p>
+      <p><span><b>Sub Region:</b> </span>${element.subregion}</p>
+      <p><span><b>Top Level Domain:</b> </span>${element.tld}</p>
+      <p><b>Languages:</b> ${Object.values(element.languages)[0]}</p>
+      <p><span><b>Capital:</b> </span>${element.capital}</p>
+      <p><span><b>Border Countries:</b> </span><button className="btn">${
         element.borders
       }</button></p>
       

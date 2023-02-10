@@ -7,12 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    
+
+  </head>
   <body>
     
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Where in the world?</a>
+      <a class="navbar-brand navEdit" href="/">Where in the world?</a>
             <div class="topnav-right">
                 <span class="darkMode clr" onclick="darkModefun()">Dark Mode</span>
             </div>
@@ -20,13 +22,14 @@
   </nav>
   <nav class="navbar bg-body-primary">
     <div class="container-fluid  bg-body-tertiary">
-      <form class="d-flex " role="search">
+      <form class="d-flex " id="form" role="search">
         
-        <input class="form-control me-2" id="mySearch" type="text" onSearch="searchFun()" placeholder="Search for a country" aria-label="Search">
+        <input class="form-control me-2" id="mySearch" type="text" placeholder="Search for a country" aria-label="Search">
+        
       </form>
       <div class="region">
-        <input type="text" class="form-control me-2 " id="region" placeholder="Filter by region">
-    </div>
+       <form id="secondForm"> <input type="text" class="form-control me-2 " id="region" placeholder="Filter by region"> </form>
+      </div>
      </div>
   </nav>
   <!-- Front Page -->
