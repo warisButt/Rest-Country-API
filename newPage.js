@@ -6,10 +6,12 @@ const darkModefun2 = () => {
 
 let getValue = sessionStorage.getItem("value");
 let cardAPI = document.querySelector(".allapi");
+// let getRegion = sessionStorage.getItem("avalue");
 const apiData = async () => {
   try {
     let response = await fetch(
-      `https://restcountries.com/v3.1/name/${getValue}`
+      `https://restcountries.com/v3.1/name/${getValue}?fullText=true`
+      // `https://restcountries.com/v3.1/region/${getRegion}`
     );
     let data = await response.json();
     console.log(data);
@@ -29,15 +31,13 @@ const apiData = async () => {
       <p id="pop"><span><b>Native Name:</b> </span>${
         Object.values(element.name.nativeName)[0].common
       }</p>
-      <p id="pop"><span><b>Population:</b> </span>${element.population}</p>
+      <p id="pop"><span><b>Population:</b> </span>${element.population.toLocaleString()}</p>
       <p><span><b>Region:</b> </span>${element.region}</p>
       <p><span><b>Sub Region:</b> </span>${element.subregion}</p>
       <p><span><b>Top Level Domain:</b> </span>${element.tld}</p>
       <p><b>Languages:</b> ${Object.values(element.languages)[0]}</p>
       <p><span><b>Capital:</b> </span>${element.capital}</p>
-      <p><span><b>Border Countries:</b> </span><button className="btn">${
-        element.borders
-      }</button></p>
+      <p><span><b>Border Countries:</b> </span>${element.borders}</p>
       
       </div>
       </div>

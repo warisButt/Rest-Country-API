@@ -1,3 +1,7 @@
+.navEdit{
+  font-family: var(--bs-body-font-family);
+  font-size: calc(1.3rem + .6vw);
+}
 .arrow {
     border: solid black;
     /* background-color: white; */
@@ -33,19 +37,60 @@
   .darkMode{
     cursor: pointer;
     color: grey;
+    float: right;
+  }
+  #backButton{
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px ;
   }
  #flagImage{
     margin: 20px 50px;
     position: fixed;
     bottom: 100;
     left: 0;
+    width: 500px;
+    height: 350px;
     /* border: 1px solid wheat; */
     box-shadow: 0 0.25rem 0.5rem rgb(17, 17, 17);
     /* width: 300px;
     border: 3px solid #73AD21; */
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+
  }
  .description{
-    margin: 20px 50px;
+    margin: 20px 100px;
     position: fixed;
     font-family: var(--bs-body-font-family);
+    text-align:left;
+    
+    /* font-size: 20px; */
+ }
+ 
+ @media  (max-width: 900px)  {
+  #flagImage{
+    position: relative;
+    width: 500px;
+    top: auto;
+    margin: 50px 10px;
+   
+  }
+  .description{
+    /* font-size: auto; */
+    margin: 20px 100px;
+    text-align: left;
+    margin: auto;
+    
+ }
+ }
+ @media (max-width: 550px){
+  #flagImage{
+    width: 350px;
+  }
+  .description{
+    text-align: left;
+    margin: auto;
+  }
  }

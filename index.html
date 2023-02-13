@@ -12,25 +12,28 @@
   </head>
   <body>
     
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand navEdit" href="/">Where in the world?</a>
-            <div class="topnav-right">
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary"> -->
+    <div class="container-fluid" id="nav">
+      <a class="navbar-brand navEdit" id="navText" href="/">Where in the world?</a>
+            <!-- <div class="topnav-right"> -->
                 <span class="darkMode clr" onclick="darkModefun()">Dark Mode</span>
-            </div>
+            <!-- </div> -->
     </div>
-  </nav>
+  <!-- </nav> -->
+  <br>
   <nav class="navbar bg-body-primary">
-    <div class="container-fluid  bg-body-tertiary">
+    <div class="container-fluid  bg-body-primary formsEdit">
       <form class="d-flex " id="form" role="search">
         
-        <input class="form-control me-2" id="mySearch" type="text" placeholder="Search for a country" aria-label="Search">
+        <input class="form-control me-2" id="mySearch" type="text" onclick="searchByName()" placeholder="Search for a country" aria-label="Search">
         
       </form>
       <div class="region">
-       <form id="secondForm"> <input type="text" class="form-control me-2 " id="region" placeholder="Filter by region"> </form>
+        
+       <form id="secondForm"> <input type="text" class="form-control me-2 " onclick="searchByRegion()" id="region" placeholder="Filter by region"> 
+      </form>
       </div>
-     </div>
+    </div>
   </nav>
   <!-- Front Page -->
   <div class="allapi">
