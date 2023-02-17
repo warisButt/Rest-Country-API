@@ -35,9 +35,7 @@ const apiData = async (url) => {
       `;
 
       cardCreate.addEventListener("click", () => {
-        window.location.assign(
-          "file:///D:/Waris/Projects/Rest%20Country%20API/newPage.html"
-        );
+        window.location.assign("./newPage.html");
         sessionStorage.setItem("value", element.name.common);
       });
       cardAPI.appendChild(cardCreate);
@@ -90,7 +88,7 @@ function searchByRegion() {
   secondForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     let regValue = region.value;
-    console.log(regValue[0].name);
+    console.log(regValue[1].name);
     cardAPI.innerText = " ";
     let response = await fetch(
       `https://restcountries.com/v3.1/region/${regValue}?fullText=true`
@@ -117,12 +115,11 @@ function searchByRegion() {
       cardAPI.appendChild(regCard);
       regCard.addEventListener("click", (e) => {
         console.log(`${e.target.value}Clicked, after Search by Filter`);
-        window.location.assign(
-          "file:///D:/Waris/Projects/Rest%20Country%20API/newPage.html"
-        );
+        window.location.assign("./newPage.html");
         sessionStorage.setItem("value", element.name.common);
       });
     });
   });
 }
 showData();
+searchByRegion();

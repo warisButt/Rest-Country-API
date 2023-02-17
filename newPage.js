@@ -26,21 +26,29 @@ const apiData = async () => {
       }" alt="flag" width="580" height="410" >
       </div>
       <div class="description">
-      <h3><span>${element.name.common}</span></h3>
+      <h2><span>${element.name.common}</span></h2>
       <br>
+    
       <p id="pop"><span><b>Native Name:</b> </span>${
         Object.values(element.name.nativeName)[0].common
       }</p>
       <p id="pop"><span><b>Population:</b> </span>${element.population.toLocaleString()}</p>
       <p><span><b>Region:</b> </span>${element.region}</p>
       <p><span><b>Sub Region:</b> </span>${element.subregion}</p>
-      <p><span><b>Top Level Domain:</b> </span>${element.tld}</p>
-      <p><b>Languages:</b> ${Object.values(element.languages)[0]}</p>
       <p><span><b>Capital:</b> </span>${element.capital}</p>
-      <p><span><b>Border Countries:</b> </span>${element.borders}</p>
+      
+      <p><span><b>Top Level Domain:</b> </span>${element.tld}</p>
+      <p><b>Currencies:</b>  ${Object.values(element.currencies)[0].name}</p>
+      <p><b>Languages:</b> ${Object.values(element.languages)}</p>
+     
+      <p ><span><b>Border Countries:</b> </span><button class="btn btn-tertiary" id="borders">${
+        element.borders
+      }
+      </button></p>
       
       </div>
       </div>
+      
       `;
       cardAPI.appendChild(cardCreate);
     });
@@ -48,6 +56,7 @@ const apiData = async () => {
     console.log(error);
   }
 };
+
 apiData();
 
 let backButton = document.getElementById("backButton");

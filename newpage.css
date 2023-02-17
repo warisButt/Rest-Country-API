@@ -1,6 +1,16 @@
 .navEdit{
   font-family: var(--bs-body-font-family);
   font-size: calc(1.3rem + .6vw);
+  margin: auto;
+  margin-left: 130px;
+}
+#nav{
+  box-shadow: 0 0.15rem 0.6rem rgb(102, 101, 101);
+  padding-bottom: 15px;
+}
+.clr{
+  /* color: grey; */
+  margin-left: auto;
 }
 .arrow {
     border: solid black;
@@ -10,6 +20,7 @@
     padding: 5px 5px;
     margin: 5px 5px;
   }
+  
   .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
@@ -26,26 +37,46 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
    
   }
   .dark-mode {
     
     border-radius: 0%;
-    background-color: black;
-    color: white;
+    background-color:  hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
   }
-  .darkMode{
+  /* .darkMode{
     cursor: pointer;
     color: grey;
     float: right;
+  } */
+  .darkMode{
+    font-size: calc(.6rem + .6vw);
+    font-family: var(--bs-body-font-family);
+      cursor: pointer;
+      float: right;
+      margin-top: 0.5%;
+      margin-right: 130px;
   }
   #backButton{
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px ;
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
+    /* box-shadow: 2px 2px ; */
+    /* margin: auto; */
+  margin-left: 150px;
+  margin-top: 3%;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
+  }
+  #borders{
+    background-color: white;
+  color: black;
+  box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
   }
  #flagImage{
-    margin: 20px 50px;
+  margin: 50px 193px;
     position: fixed;
     bottom: 100;
     left: 0;
@@ -61,29 +92,41 @@
 
  }
  .description{
-    margin: 20px 100px;
+  margin: 50px 147px;
     position: fixed;
     font-family: var(--bs-body-font-family);
     text-align:left;
     
     /* font-size: 20px; */
  }
- 
- @media  (max-width: 900px)  {
+ @media  (max-width: 1080px)  {
   #flagImage{
     position: relative;
     width: 500px;
     top: auto;
-    margin: 50px 10px;
+    margin: 250px 10px;
    
   }
   .description{
     /* font-size: auto; */
-    margin: 20px 100px;
+    margin: 20px 20px;
     text-align: left;
     margin: auto;
     
  }
+ }
+ @media (min-width: 1900px){
+#flagImage{
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+  margin: 300px 200px;
+  
+}
+.description{
+  margin: 300px 200px;
+  font-size: 30px;
+}
  }
  @media (max-width: 550px){
   #flagImage{
@@ -92,5 +135,6 @@
   .description{
     text-align: left;
     margin: auto;
+    margin: 10px 10px;
   }
  }
