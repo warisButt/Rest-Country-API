@@ -13,69 +13,78 @@
   margin-left: auto;
 }
 .arrow {
-    border: solid black;
-    /* background-color: white; */
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px 5px;
-    margin: 5px 5px;
-  }
-  
-  .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
-  .bk{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .display{
-    display: none;
-  }
-  .allapi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border: solid black;
+  /* background-color: white; */
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
 
-   
-  }
-  .dark-mode {
-    
-    border-radius: 0%;
-    background-color:  hsl(207, 26%, 17%);
-    color: hsl(0, 0%, 100%);
-  }
-  /* .darkMode{
-    cursor: pointer;
-    color: grey;
-    float: right;
-  } */
-  .darkMode{
-    font-size: calc(.6rem + .6vw);
-    font-family: var(--bs-body-font-family);
-      cursor: pointer;
-      float: right;
-      margin-top: 0.5%;
-      margin-right: 130px;
-  }
-  #backButton{
-    /* border: 2px solid black; */
-    /* border-radius: 10px; */
-    /* box-shadow: 2px 2px ; */
-    /* margin: auto; */
-  margin-left: 150px;
-  margin-top: 3%;
-  background-color: white;
-  color: black;
-  box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
-  }
-  #borders{
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.bk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display{
+  display: none;
+}
+.allapi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+.dark-mode {
+  
+  border-radius: 0%;
+  background-color:  hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+}
+#btn{
     background-color: white;
-  color: black;
-  box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
-  }
- #flagImage{
+    border-radius: 8px;
+    box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);;
+    border: none;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+}
+
+.darkMode{
+  font-size: calc(.6rem + .6vw);
+  font-family: var(--bs-body-font-family);
+    cursor: pointer;
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 130px;
+}
+#backButton{
+  /* border: 2px solid black; */
+  /* border-radius: 10px; */
+  /* box-shadow: 2px 2px ; */
+  /* margin: auto; */
+margin-left: 150px;
+margin-top: 3%;
+background-color: white;
+color: black;
+box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
+}
+#borders{
+  background-color: white;
+color: black;
+box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
+}
+#flagImage{
   margin: 50px 193px;
     position: fixed;
     bottom: 100;
@@ -91,50 +100,140 @@
     display: block; */
 
  }
- .description{
-  margin: 50px 147px;
-    position: fixed;
-    font-family: var(--bs-body-font-family);
-    text-align:left;
-    
-    /* font-size: 20px; */
- }
- @media  (max-width: 1080px)  {
-  #flagImage{
-    position: relative;
-    width: 500px;
-    top: auto;
-    margin: 250px 10px;
-   
+#card2 .image2 {
+  box-shadow:var(--shadowColor);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+grid-area: image2;
+}
+
+#card2 .des1 {
+display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+grid-area: des1;
+}
+
+#card2 .des2 {
+display: flex;
+justify-content: start;
+align-items: start;
+flex-direction: column;
+grid-area: des2;
+margin-top: 70px;
+}
+
+#card2 .des3 {
+grid-area: des3;
+display: flex;
+justify-content: start;
+align-items: start;
+
+flex-direction: column;
+}
+
+#card2{
+display: grid;
+grid-template-columns:  minmax(250px, 1.5fr) 1fr 1fr ;
+grid-template-rows: 0.7fr 0.15fr;
+grid-template-areas:
+    "image2 des1 des2"
+    "image2 des3 des3";
+grid-gap: 1rem;
+text-align: center;
+justify-content: center;
+background-color: var(--headerColor);
+  color: var(--textColor);
+  margin: 1rem;
+
+}
+#card2 .image2 img{
+width: 100%;
+height: 100%;
+
+box-shadow: 0 0.25rem 0.5rem rgb(98 95 95);
+transition: all 0.3s;
+}
+
+
+@media screen and (max-width: 828px) {
+#CardsContainer2{
+  width: 90%;
+  /* margin: auto; */
+}
+#Search2{
+    padding: 0;
+}
+#card2 {
+    grid-template-columns: auto;
+  grid-template-rows:  1fr;
+  grid-template-areas:
+    "image2"
+    "des1"
+    "des2"
+    "des3";
+}
+.noDisplay{
+  display: none;
+}
+#card2 .image2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#CardsContainer{
+  width: 80%;
+   grid-template-columns:1fr 1fr;
+   margin: auto;
+
+}
+.Search input,.Search #filter{
+ width: 40%;
+}
+.none{height: 1.5rem;}      }
+
+ 
+
+@media screen and (max-width: 488px) {
+  *{
+    font-size:medium;
   }
-  .description{
-    /* font-size: auto; */
-    margin: 20px 20px;
-    text-align: left;
-    margin: auto;
+    #CardsContainer{
+       width: 80%;
+        grid-template-columns:1fr ;
+        margin: auto;
+
+    }
     
- }
- }
- @media (min-width: 1900px){
-#flagImage{
-  width: 700px;
-  max-width: 100%;
-  height: auto;
-  margin: 300px 200px;
+    .Search{
+      display: flex;
+     flex-direction: column;
+  }
   
-}
-.description{
-  margin: 300px 200px;
-  font-size: 30px;
-}
- }
- @media (max-width: 550px){
-  #flagImage{
-    width: 350px;
+    .Search input{
+      width: 90%;
+    margin-bottom: 23px;
+    }
+      .Search #filter{
+      width: 60%;
+    }
   }
-  .description{
-    text-align: left;
-    margin: auto;
-    margin: 10px 10px;
+  @media screen and (max-width: 288px) {
+    #backButton{
+      display: none;
+      position: absolute;
+      top: 8rem;
+      left: 0.6rem;
+      border-radius: 4px;
   }
- }
+ .Search{
+
+    padding: 23px;
+    margin-top: 150px;
+    display: flex;
+    justify-content:space-between;
+}
+  }

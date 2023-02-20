@@ -1,110 +1,185 @@
 body{
-  background-color: hsl(0, 0%, 98%);
-  color:  hsl(200, 15%, 8%);
-}
-#nav{
-  box-shadow: 0 0.15rem 0.6rem rgb(102, 101, 101);
-  padding-bottom: 15px;
-}
-.navEdit{
-    font-family: var(--bs-body-font-family);
-    font-size: calc(1.3rem + .6vw);
+    background-color: rgb(245, 241, 241);
+    color:  hsl(200, 15%, 8%);
+  }
+  #nav{
+    /* box-shadow: 0 0.15rem 0.6rem rgb(255, 253, 253); */
+    background-color: rgb(235, 232, 232);
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+ #navText{
+      font-family: var(--bs-body-font-family);
+      font-size: calc(1.3rem + .6vw);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin-left: 130px;
+      margin-top: 20px;
+  }
+  #mySearch{
     margin: auto;
     margin-left: 130px;
-}
-#mySearch{
-  margin: auto;
-  margin-left: 130px;
-  color: hsl(0, 0%, 52%);
- 
+    color: hsl(0, 0%, 52%);
+    padding: 13px 47px;
+  
+  }
+  #secondForm{
+    margin: auto;
+      margin-right: 130px;
+      padding: 13px 47px;
+  }
+  
+  .allapi{
+      margin: 20px 264px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+  }
+  .dark-mode {
+      
+      border-radius: 0%;
+      background-color:  hsl(207, 26%, 17%);
+      color: hsl(0, 0%, 100%);
+    }
+  .darkMode{
+    font-size: calc(.6rem + .6vw);
+    font-family: var(--bs-body-font-family);
+      cursor: pointer;
+      float: right;
+      margin-top: 0.5%;
+      margin-right: 130px;
+  }
 
-}
-#secondForm{
-  margin: auto;
-    margin-right: 130px;
-}
+  .clr{
+      /* color: grey; */
+      margin-left: auto;
+  }
 
-.allapi{
-    margin: 20px 264px;
+  .countryCard{
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-.dark-mode {
-    
-    border-radius: 0%;
-    background-color:  hsl(207, 26%, 17%);
-    color: hsl(0, 0%, 100%);
-  }
-.darkMode{
-  font-size: calc(.6rem + .6vw);
-  font-family: var(--bs-body-font-family);
-    cursor: pointer;
-    float: right;
-    margin-top: 0.5%;
-    margin-right: 130px;
-}
-
-.clr{
-    /* color: grey; */
+    width: 280px;
+    height: 415px;
+    margin: 45px 90px;
     margin-left: auto;
-}
-.countryCard{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-  height: 415px;
-  margin: 45px 90px;
-  /* margin-left: -70%; */
-  margin-left: auto;
-  /* margin-right: auto; */
-  overflow: hidden;
-  box-shadow: 0 0.25rem 0.5rem rgb(17, 17, 17);
-  transition: all 0.3s;
-}
-.flag{
-     border-radius: 4px 0 0 4px;
-     /* border: 1px solid wheat; */
-     box-shadow: 0 0.25rem 0.5rem hsl(207, 26%, 17%);
-}
-.description{
-    /* font-weight: bold; */
-    margin: 37px 15px;
-    
-    font-family: var(--bs-body-font-family);
-}
-.classNam{
-    font-size: 1px;
-}
-
-@media screen and (max-width: 600px) {
-
-    #mySearch input[type="text"] {
-      border: 1px solid #ccc;
-        float: left;
-        padding: 6px;
-        border: none;
-        margin-top: 8px;
-        width: 100%;
-        font-size: 17px;
-      }
-      
-    }
-  
-  .header {
-    position: sticky;
-    height: 1em;
-    display: flex;
-    padding: 2em;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0px;
-    background-color: var(--headerColor);
-    box-shadow: 10px 10px 10px -5px var(--shadowColor);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.5rem rgb(231, 228, 228);
+    transition: all 0.3s;
+    /* background-color: white; */
   }
+  .flag{
+       border-radius: 4px 0 0 4px;
+       /* box-shadow: 0 0.25rem 0.5rem hsl(210, 4%, 90%); */
+  }
+  .description{
+      /* font-weight: bold; */
+      margin: 37px 15px;
+      
+      font-family: var(--bs-body-font-family);
+  }
+ 
+  @media screen and (max-width:2000px) {
+    .countryCard{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      height: 375px;
+      margin: 40px 70px;
+      margin-left: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0.25rem 0.5rem rgb(231, 228, 228);
+      transition: all 0.3s;
+      /* background-color: white; */
+    }
+    
+  }
+  @media screen and (min-width:2370px) {
+    .countryCard{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 290px;
+      height: 415px;
+      margin: 45px 90px;
+      margin-left: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0.25rem 0.5rem rgb(231, 228, 228);
+      transition: all 0.3s;
+      /* background-color: white; */
+    }
+    
+  }
+  @media screen and (max-width:1812px) {
+    .allapi {
+      margin: 12px 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+    .countryCard{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      height: 415px;
+      margin: 45px 90px;
+      margin-left: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0.25rem 0.5rem rgb(231, 228, 228);
+      transition: all 0.3s;
+      /* background-color: white; */
+    }
+    
+  }
+
+
+  .classNam{
+      font-size: 1px;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+      #mySearch input[type="text"] {
+        border: 1px solid #ccc;
+          float: left;
+          padding: 6px;
+          border: none;
+          margin-top: 8px;
+          width: 100%;
+          font-size: 17px;
+        }
+        
+      }
+    
+    .header {
+      position: sticky;
+      height: 1em;
+      display: flex;
+      padding: 2em;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0px;
+      background-color: var(--headerColor);
+      box-shadow: 10px 10px 10px -5px var(--shadowColor);
+    }
