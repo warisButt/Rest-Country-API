@@ -59,7 +59,12 @@
     font-size: 15px;
     margin: 4px 2px;
 }
-
+.des1{
+    margin-left: 100px;
+}
+.des3{
+    margin-left: 100px;
+}
 .darkMode{
   font-size: calc(.6rem + .6vw);
   font-family: var(--bs-body-font-family);
@@ -158,82 +163,346 @@ box-shadow: 0 0.25rem 0.5rem rgb(98 95 95);
 transition: all 0.3s;
 }
 
+@media only screen and (max-width: 280px){
 
-@media screen and (max-width: 828px) {
-#CardsContainer2{
-  width: 90%;
-  /* margin: auto; */
-}
-#Search2{
-    padding: 0;
-}
-#card2 {
-    grid-template-columns: auto;
-  grid-template-rows:  1fr;
-  grid-template-areas:
-    "image2"
-    "des1"
-    "des2"
-    "des3";
-}
-.noDisplay{
-  display: none;
-}
-#card2 .image2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-#CardsContainer{
-  width: 80%;
-   grid-template-columns:1fr 1fr;
-   margin: auto;
-
-}
-.Search input,.Search #filter{
- width: 40%;
-}
-.none{height: 1.5rem;}      }
-
- 
-
-@media screen and (max-width: 488px) {
-  *{
-    font-size:medium;
-  }
-    #CardsContainer{
-       width: 80%;
-        grid-template-columns:1fr ;
-        margin: auto;
-
-    }
-    
-    .Search{
-      display: flex;
-     flex-direction: column;
+  #flagImage {
+    margin: 3px 7px;
+    width: 258px;
+    height: 200px;
+    margin-top: 30px;
   }
   
-    .Search input{
-      width: 90%;
-    margin-bottom: 23px;
-    }
-      .Search #filter{
-      width: 60%;
-    }
-  }
-  @media screen and (max-width: 288px) {
-    #backButton{
-      display: none;
-      position: absolute;
-      top: 8rem;
-      left: 0.6rem;
-      border-radius: 4px;
-  }
- .Search{
-
-    padding: 23px;
-    margin-top: 150px;
+  #card2 .des1{
+    margin-top: 280px;
+    margin-left: 75px;
+    text-align: start;
     display: flex;
-    justify-content:space-between;
-}
+    align-items: start;
+    justify-content: start;
+    /* float: left; */
   }
+  #card2 .des2{
+    margin-top: 3px;
+    margin-left: 80px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: 80px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+}
+@media only screen and (max-width: 1350px){
+
+  #flagImage {
+    margin: 3px 110px;
+    width: 470px;
+    height: 340px;
+    margin-top: 160px;
+  }
+  
+  #card2 .des1{
+    margin-top: 125px;
+    margin-left: 95px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 193px;
+    margin-left: 75px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: 96px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+}
+@media only screen and (max-width: 1160px){
+
+  #flagImage {
+    margin: 3px 55px;
+    width: 395px;
+    height: 265px;
+    margin-top: 160px;
+  }
+  
+  #card2 .des1{
+    margin-top: 120px;
+    margin-left: 105px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 190px;
+    margin-left: 60px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: 107px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+}
+@media only screen and (max-width: 850px){
+  .navEdit{
+    margin-left: 2px;
+  }
+  #flagImage {
+    /* text-align: start; */
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin: 3px 130px;
+    width: 400px;
+    height: 270px;
+    margin-top: 120px;
+  }
+  
+  #card2 .des1{
+    margin-top: 440px;
+    margin-left: -160px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 505px;
+    margin-left: -40px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: -155px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+}
+@media only screen and (max-width:540px){
+  .navEdit{
+    margin-left: 2px;
+  }
+  #flagImage {
+    margin: 3px 7px;
+   
+    width: 310px;
+    height: 210px;
+  }
+  .navEdit{
+    margin-left: 2px;
+  }
+  .darkMode{
+    margin-right: 2px;
+  }
+  #backButton{
+    margin-left: 10px;
+  }
+  #card2 .des1{
+    margin-top: 230px;
+    margin-left: -245px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 285px;
+    margin-left: -125px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: -240px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+  }
+}
+@media only screen and (max-width:400px){
+  #flagImage {
+    margin: 20px 38px;
+    width: 300px;
+    height: 190px;
+  }
+  .navEdit{
+    margin-left: 2px;
+  }
+  .darkMode{
+    margin-right: 2px;
+  }
+  #backButton{
+    margin-left: 10px;
+  }
+  #card2 .des1{
+    margin-top: 280px;
+    margin-left: -245px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 12px;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 337px;
+    margin-left: -125px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+  #card2 .des3{
+    margin-top: 3px;
+    margin-left: -240px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width:350px){
+  #flagImage {
+    margin: 4px 38px;
+    width: 265px;
+    height: 167px;
+    margin-left: 12px;
+  }
+  .navEdit{
+    margin-left: 2px;
+  }
+  .darkMode{
+    margin-right: 2px;
+  }
+  #backButton{
+    margin-left: 10px;
+  }
+  #card2 .des1{
+    margin-top: 230px;
+    margin-left: -255px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 12px;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 282px;
+    margin-left: -125px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+  #card2 .des3{
+    margin-top: -7px;
+    margin-left: -252px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width:300px){
+  #flagImage {
+    margin: 4px 38px;
+    width: 245px;
+    height: 157px;
+    margin-left: 12px;
+  }
+  .navEdit{
+    margin-left: 2px;
+    font-size: 12px;
+  }
+  .darkMode{
+    margin-right: 2px;
+    font-size: 12px;
+  }
+  #backButton{
+    margin-left: 10px;
+  }
+  #card2 .des1{
+    margin-top: 230px;
+    margin-left: -185px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 12px;
+    /* float: left; */
+  }
+  #card2 .des2{
+    margin-top: 473px;
+    margin-left: -200px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+  #card2 .des3{
+    margin-top: -7px;
+    margin-left: -182px;
+    text-align: start;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    float: left;
+    font-size: 12px;
+  }
+}

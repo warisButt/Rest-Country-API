@@ -12,18 +12,14 @@ const darkModefun2 = () => {
   let searchColor = document.getElementById("mySearch");
   if (searchColor.style.background == "grey") {
     searchColor.style.background = "rgb(245, 241, 241)";
-    // searchColor.style.color = "black";
   } else {
     searchColor.style.background = "grey";
-    // searchColor.style.color = "white";
   }
   let backButtonColor = document.getElementById("backButton");
   if (backButtonColor.style.background == "grey") {
     backButtonColor.style.background = "white";
-    // searchColor.style.color = "black";
   } else {
     backButtonColor.style.background = "grey";
-    // searchColor.style.color = "white";
   }
 };
 
@@ -34,7 +30,6 @@ async function fetchData(countryCode) {
     );
     const data = await response.json();
     const countryName = data[0].name.common;
-
     return countryName;
   } catch (error) {
     console.error(error);
@@ -72,14 +67,7 @@ const apiData = async () => {
                   element.flags.png
                 }" alt="flag" width="580" height="410">
               </div>
-             
-             
-               
-              
-              
-
               <div class="des1">
-                
               <h2><span>${element.name.common}</span></h2>
               <br>
                 <p id="pop"><span><b>Native Name:</b> </span>${
@@ -90,9 +78,7 @@ const apiData = async () => {
                 <p><span><b>Sub Region:</b> </span>${element.subregion}</p>
                 <p><span><b>Capital:</b> </span>${element.capital}</p>
                 </div>
-
                 <div class ="des2">
-                
                 <p><span><b>Top Level Domain:</b> </span>${element.tld}</p>
                 <p><b>Currencies:</b>  ${
                   Object.values(element.currencies)[0].name

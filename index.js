@@ -1,5 +1,4 @@
 document.getElementById("mySearch").size = "50";
-document.getElementById("region").size = "30";
 let cardAPI = document.querySelector(".allapi");
 
 const darkModefun = () => {
@@ -14,11 +13,17 @@ const darkModefun = () => {
   let searchColor = document.getElementById("mySearch");
   if (searchColor.style.background == "grey") {
     searchColor.style.background = "rgb(245, 241, 241)";
-    // searchColor.style.color = "black";
   } else {
     searchColor.style.background = "grey";
-    // searchColor.style.color = "white";
   }
+  let regionColor=document.getElementById("region");
+  if (regionColor.style.background == "grey") {
+    regionColor.style.background = "rgb(245, 241, 241)";
+  } else {
+    regionColor.style.background = "grey";
+  }
+
+ 
   element.classList.toggle("dark-mode");
 };
 
@@ -32,6 +37,7 @@ const createCard = (element) => {
       </div>
       <div class="description">
       <h3><span>${element.name.common}</span></h3>
+      <br>
       <p id="pop"><span><b>Population:</b> </span>${element.population.toLocaleString()}</p>
       <p><span><b>Region:</b> </span>${element.region}</p>
       <p><span><b>Capital:</b> </span>${element.capital}</p>
