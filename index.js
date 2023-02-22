@@ -10,20 +10,25 @@ const darkModefun = () => {
     navColor.style.background = "grey";
   }
 
-  let searchColor = document.getElementById("mySearch");
-  if (searchColor.style.background == "grey") {
-    searchColor.style.background = "rgb(245, 241, 241)";
+  let searchIcon = document.getElementById("searchIcon");
+  if (searchIcon.style.background == "grey") {
+    searchIcon.style.background = "rgb(245, 241, 241)";
   } else {
-    searchColor.style.background = "grey";
+    searchIcon.style.background = "grey";
   }
-  let regionColor=document.getElementById("region");
+  let mySearch = document.getElementById("mySearch");
+  if (mySearch.style.background == "grey") {
+    mySearch.style.background = "rgb(245, 241, 241)";
+  } else {
+    mySearch.style.background = "grey";
+  }
+  let regionColor = document.getElementById("region");
   if (regionColor.style.background == "grey") {
     regionColor.style.background = "rgb(245, 241, 241)";
   } else {
     regionColor.style.background = "grey";
   }
 
- 
   element.classList.toggle("dark-mode");
 };
 

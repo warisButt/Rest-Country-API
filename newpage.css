@@ -91,7 +91,7 @@ box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
 }
 #flagImage{
   margin: 50px 193px;
-    position: fixed;
+    position: absolute;
     bottom: 100;
     left: 0;
     width: 500px;

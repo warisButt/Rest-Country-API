@@ -9,10 +9,11 @@ body{
 }
 #nav{
   /* box-shadow: 0 0.15rem 0.6rem rgb(255, 253, 253); */
-  background-color: rgb(235, 232, 232);
+  background-color: rgb(245, 241, 241);
   padding-bottom: 15px;
   display: flex;
   align-items: center;
+  
 }
 #navText{
     font-family: var(--bs-body-font-family);
@@ -23,13 +24,36 @@ body{
     margin-left: 80px;
     margin-top: 20px;
 }
+#searchIcon{
+  /* margin-left: 100px; */
+  box-shadow: 0 0 8px 0px rgba(116, 114, 114, 0.15);
+margin-left: 80px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4px;
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  color: var(--textColor);
+  background-color: white;
+  width: 380px;
+}
+.form-control{
+  fill: none;
+}
 #mySearch{
-  margin: auto;
-  margin-left: 80px;
-  color: hsl(0, 0%, 52%);
-  padding: 13px 20px;
+  /* margin-left: 5px; */
+  width: fit-content;
+  height: fit-content;
+  /* padding: 13px 20px; */
+ border-radius: 0;
+ border: none;
+ margin-left: -50px;
 
 }
+
 #secondForm{
   /* margin: auto; */
     margin-right: 6px;
@@ -38,22 +62,11 @@ body{
 }
 
 .allapi{
-    /* margin: 20px 264px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap; */
     display: grid;
     place-items: center;
-    /* width: 150px; */
-    /* height: 150px; */
-    /* grid-template-rows: 130px 130px 130px; */
-    grid-template-columns: 80px 80px 80px 80px;
-   /* grid-template-columns: repeat(autofill, minmax(150px, 1fr)); */
+    grid-template-columns: 100px 100px 100px 100px;
     row-gap: 80px;
     column-gap: 230px;
-    /* margin: auto; */
     margin-left: 180px;
     margin-right: 90px;
     
@@ -152,7 +165,7 @@ body{
   .allapi{
     grid-template-columns: 10px 10px 10px ;
     margin-left: 160px; 
-    column-gap: 260px;
+    column-gap: 10px;
     width: auto;
     
     
@@ -208,3 +221,145 @@ body{
   }
 
 }
+
+  @media screen and (max-width: 2150px){
+    .parent{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: auto;
+    }
+    .allapi{
+      column-gap: 450px;
+    }
+    .countryCard{
+      width: auto;
+      height: 415px;
+    }
+    #mySearch{
+      margin-left: 12px;
+    /* padding: 10px 10px; */
+    }
+  }
+  @media screen and (max-width: 1950px){
+    #navText{
+      margin-left: 120px;
+    }
+    #mySearch{
+      margin-left: 12px;
+    /* padding: 10px 10px; */
+    }
+    .darkMode{
+      margin-right: 100px;
+     }
+    .allapi{
+      column-gap: 350px;
+    }
+    .countryCard{
+      width: auto;
+      height: 400px;
+    }
+
+    
+  }
+  @media screen and (max-width: 1750px){
+    .allapi{
+      column-gap: 300px;
+    }
+  } @media screen and (max-width: 1650px){
+    .allapi{
+      column-gap: 250px;
+    }
+    #secondForm{
+      margin-right: 110px;
+    }
+    .darkMode{
+      margin-right: 200px;
+    }
+  } @media screen and (max-width: 1510px){
+      #nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+      .allapi{
+          flex-direction: row;
+          justify-content: space-between;
+          margin: auto;
+        }
+      .countryCard{
+        margin-left: 10px;
+      }
+      } @media screen and (max-width: 1420px){
+        .allapi{
+          grid-template-columns: 100px 100px 100px;
+        }
+        .darkMode{
+          margin-right: 150px;
+        }
+      } @media screen and (max-width: 1060px){
+        .allapi{
+          grid-template-columns: 100px 100px;
+        }
+        #mySearch{
+          margin-top: 5px;
+          
+            margin-left: 12px;
+          /* padding: 10px 10px; */
+          
+        }
+        #secondForm{
+          margin-left: 70px;
+        }
+        #searchIcon{
+          width: 335px;
+          height: 45px;
+        }
+      } @media screen and (max-width: 860px){
+        #navText{
+          margin-left: 20px;
+        }
+        #mySearch{
+          margin-left: 20px;
+        }
+      } @media screen and (max-width: 650px){
+        .darkMode{
+          margin-right: 60px;
+        }
+        #secondForm{
+          margin-left: 50px;
+        }
+        .allapi{
+          grid-template-columns: 100px;
+        }
+      } @media screen and (max-width: 510px){
+        #navText{
+          margin-left: 10px;
+        }
+        #mySearch{
+          margin-left: 10px;
+        }
+        .darkMode{
+          margin-right: 10px;
+        }
+        #secondForm{
+          margin-left: -20px;
+        }
+        #region{
+          width: auto;
+        }
+      } @media screen and (max-width: 400px){
+        #region{
+          width: auto;
+        }
+        .allapi{
+          margin-left: 150px;
+        }
+      } @media screen and (max-width: 300px){
+        .allapi{
+          margin-left: 150px;
+        }
+      }
+  
+
