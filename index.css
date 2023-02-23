@@ -9,8 +9,8 @@ body{
 }
 #nav{
   /* box-shadow: 0 0.15rem 0.6rem rgb(255, 253, 253); */
-  background-color: rgb(245, 241, 241);
-  padding-bottom: 15px;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 30px;
   display: flex;
   align-items: center;
   
@@ -26,7 +26,7 @@ body{
 }
 #searchIcon{
   /* margin-left: 100px; */
-  box-shadow: 0 0 8px 0px rgba(116, 114, 114, 0.15);
+  /* box-shadow: 0 0 8px 0px rgba(116, 114, 114, 0.15); */
 margin-left: 80px;
   width: fit-content;
   height: fit-content;
@@ -39,6 +39,9 @@ margin-left: 80px;
   color: var(--textColor);
   background-color: white;
   width: 380px;
+}
+#iconColor{
+  margin-left: 15px;
 }
 .form-control{
   fill: none;
@@ -53,7 +56,10 @@ margin-left: 80px;
  margin-left: -50px;
 
 }
-
+#mySearch:focus {
+  outline: none;
+  box-shadow: none;
+}
 #secondForm{
   /* margin: auto; */
     margin-right: 6px;
@@ -219,8 +225,12 @@ margin-left: 80px;
     column-gap: 100px;
     margin-left: 180px;
   }
+  #form {
+    margin-left: -75px;
+  }
 
 }
+
 
   @media screen and (max-width: 2150px){
     .parent{
@@ -309,6 +319,9 @@ margin-left: 80px;
           /* padding: 10px 10px; */
           
         }
+        #form{
+          margin-top: 30px;
+        }
         #secondForm{
           margin-left: 70px;
         }
@@ -360,6 +373,12 @@ margin-left: 80px;
         .allapi{
           margin-left: 150px;
         }
+      } @media only screen and (max-width: 375px){
+        #form{
+          margin-top: 30px;
+        }
+        #region{
+          margin-top: -10px;
+        }
       }
-  
 

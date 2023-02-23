@@ -5,8 +5,9 @@
   margin-left: 130px;
 }
 #nav{
-  box-shadow: 0 0.15rem 0.6rem rgb(102, 101, 101);
-  padding-bottom: 15px;
+  box-shadow: 0 0.15rem 0.6rem rgb(68, 68, 68);
+  padding-bottom: 30px;
+  background-color: rgb(255, 255, 255);
 }
 .clr{
   /* color: grey; */
@@ -49,15 +50,15 @@
 #btn{
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);;
+    box-shadow: 0 0.15rem 0.6rem rgb(216, 210, 210);
     border: none;
     color: black;
-    padding: 16px;
+    padding: 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
-    margin: 4px 2px;
+    font-size: 14px;
+    margin: 4px 5px;
 }
 .des1{
     margin-left: 100px;
@@ -162,9 +163,55 @@ height: 100%;
 box-shadow: 0 0.25rem 0.5rem rgb(98 95 95);
 transition: all 0.3s;
 }
-
+ @media only screen and (min-width: 1700px){
+  #flagImage{
+    width: 640px;
+    height: 430px;
+  }
+  #card2 .des1{
+    margin-top: 85px;
+    margin-left: 140px;
+  }
+  #card2 .des2{
+    margin-top: 155px;
+    margin-left: 140px;
+  }
+  #card2 .des3{
+    margin-left: 140px;
+  }
+} @media  screen and (min-width: 1930){
+  #card2 .des1{
+    margin-left: 85px;
+  }
+  #card2 .des2{
+    margin-left: 85px;
+  }
+  #card2 .des3{
+    margin-left: 85px;
+  }
+} @media screen and (max-width: 1700px){
+  #flagImage{
+    width: 525px;
+    height: 365px;
+    margin-top: 100px;
+  }
+  #card2 .des1{
+      margin-top: 145px;
+      margin-left: 185px;
+  }
+  #card2 .des2{
+    margin-top: 220px;
+    margin-left: 120px;
+}
+#card2 .des3{
+  margin-top: 1px;
+  margin-left: 190px;
+}
+}
 @media only screen and (max-width: 280px){
+  #nav{
 
+  }
   #flagImage {
     margin: 3px 7px;
     width: 258px;
@@ -210,8 +257,8 @@ transition: all 0.3s;
   }
   
   #card2 .des1{
-    margin-top: 125px;
-    margin-left: 95px;
+    margin-top: 225px;
+    margin-left: 135px;
     text-align: start;
     display: flex;
     align-items: start;
@@ -219,7 +266,7 @@ transition: all 0.3s;
     /* float: left; */
   }
   #card2 .des2{
-    margin-top: 193px;
+    margin-top: 298px;
     margin-left: 75px;
     text-align: start;
     display: flex;
@@ -229,7 +276,7 @@ transition: all 0.3s;
   }
   #card2 .des3{
     margin-top: 3px;
-    margin-left: 96px;
+    margin-left: 140px;
     text-align: start;
     display: flex;
     align-items: start;
@@ -247,7 +294,7 @@ transition: all 0.3s;
   }
   
   #card2 .des1{
-    margin-top: 120px;
+    margin-top: 200px;
     margin-left: 105px;
     text-align: start;
     display: flex;
@@ -256,7 +303,7 @@ transition: all 0.3s;
     /* float: left; */
   }
   #card2 .des2{
-    margin-top: 190px;
+    margin-top: 270px;
     margin-left: 60px;
     text-align: start;
     display: flex;
@@ -366,7 +413,7 @@ transition: all 0.3s;
 }
 @media only screen and (max-width:400px){
   #flagImage {
-    margin: 20px 38px;
+    margin: 40px 38px;
     width: 300px;
     height: 190px;
   }

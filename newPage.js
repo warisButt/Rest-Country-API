@@ -2,13 +2,18 @@ const darkModefun2 = () => {
   console.log("Button clicked");
   let element = document.body;
   element.classList.toggle("dark-mode");
-  let navColor = document.getElementById("nav");
-  if (navColor.style.background == "grey") {
-    navColor.style.background = "rgb(255 255 255)";
-  } else {
-    navColor.style.background = "grey";
-  }
 
+  const navColor = document.getElementById("nav");
+  const darkColor = "hsl(209, 23%, 22%)";
+  const computedStyle = getComputedStyle(navColor);
+  const backgroundColor = computedStyle.backgroundColor;
+  if (backgroundColor === "rgb(255, 255, 255)") {
+    navColor.style.backgroundColor = darkColor;
+    console.log("Dark mode enabled");
+  } else {
+    navColor.style.backgroundColor = "white";
+    console.log("Dark mode disabled");
+  }
   let searchColor = document.getElementById("mySearch");
   if (searchColor.style.background == "grey") {
     searchColor.style.background = "rgb(245, 241, 241)";
@@ -21,6 +26,15 @@ const darkModefun2 = () => {
   } else {
     backButtonColor.style.background = "grey";
   }
+
+  const buttons = document.querySelectorAll("#btn");
+  buttons.forEach(function (button) {
+    if (button.style.backgroundColor == "grey") {
+      button.style.backgroundColor = "white";
+    } else {
+      button.style.backgroundColor = "grey";
+    }
+  });
 };
 
 async function fetchData(countryCode) {
@@ -87,8 +101,8 @@ const apiData = async () => {
                 </div>
 
                 <div class="des3">
-                <p><span><b>Border Countries:</b> </span>
-    <div class="button-container">
+                <p><span><b>Border Countries: </b> </span>
+    
       ${
         borderCountries.length > 0
           ? borderCountries
@@ -98,7 +112,7 @@ const apiData = async () => {
               .join(" ")
           : "None"
       }
-    </div>
+    
    
   </p>
 
